@@ -1,0 +1,51 @@
+﻿@model Employee
+
+<div class="container shadow p-5">
+    <div class="row pb-2">
+        <h2>Edit Employee</h2>
+    </div>
+
+    <form method="post" asp-action="Edit">
+        <div asp-validation-summary="All"></div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label asp-for="Phone">Employee Phone</label>
+                <input type="text" class="form-control mb-3" asp-for="Phone">
+                <span asp-validation-for="Phone" class=" alert-danger"></span>
+            </div>
+            <div class="form-group col-md-6">
+                <label asp-for="FIO">FIO</label>
+                <input type="text" class="form-control mb-3" asp-for="FIO">
+                <span asp-validation-for="FIO" class=" alert-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label asp-for="Email">Email Address</label>
+                <input type="text" class="form-control mb-3" asp-for="Email">
+                <span asp-validation-for="Email" class=" alert-danger"></span>
+            </div>
+            <div class="form-group col-md-6 mb-3">
+                <label asp-for="TypeRequest">Position</label>
+                <select name="TypeRequest">
+                    <option value="Developer">
+                        Developer
+                    </option>
+                    <option value="HR">
+                        HR
+                    </option>
+                    <option value="Security">
+                        Security
+                    </option>
+                </select>
+            </div>
+        </div>
+
+
+        <button type="submit" class="btn btn-lg btn-primary p-2"><i class="bi bi-file-plus-fill"></i>Update</button>
+        <a asp-controller="Employee" asp-action="Index" class="btn btn-lg btn-warning p-2">Back To List</a>
+    </form>
+
+</div>

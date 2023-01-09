@@ -13,18 +13,18 @@ namespace tasksberbank.Models
         {
             context.Database.EnsureCreated();
 
-            if (context.Requests.Any())
+            if (context.Employees.Any())
             {
                 return;
             }
 
-            var requests = new Request[]
+            var Employees = new Employee[]
             {
                      
             };
-            foreach (Request s in requests)
+            foreach (Employee s in Employees)
             {
-                context.Requests.Add(s);
+                context.Employees.Add(s);
             }
             context.SaveChanges();
         }

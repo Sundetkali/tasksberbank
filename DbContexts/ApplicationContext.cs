@@ -12,7 +12,8 @@ namespace tasksberbank.DbContexts
         public ApplicationContext(DbContextOptions<ApplicationContext> options):base(options)
         {
         }
-        public DbSet<Request> Requests { get; set; }
+        public DbSet<Employee> Employees { get; set; }
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<Authorization> Authorizations { get; set; }
     }
 }

@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace tasksberbank.Models
 {
-    public class authorization
+    public class Authorization
     {
         public int Id { get; set; }
         public int Number { get; set; }

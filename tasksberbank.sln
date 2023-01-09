@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.32228.343
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tasksberbank", "tasksberbank.csproj", "{B04288E7-D2A6-4190-AFBF-03F6AD625FCF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "tasksberbank", "tasksberbank.csproj", "{B04288E7-D2A6-4190-AFBF-03F6AD625FCF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
